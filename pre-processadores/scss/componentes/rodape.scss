@@ -1,0 +1,20 @@
+.rodape{
+    color: gray;
+    &__secao{
+        color: red;
+    }
+    &__paragrafo{
+
+    }
+    &__lista{
+        &__item{
+            color: blue;
+        }
+    }
+    &__icone{
+
+    }
+    &__informacao{
+        
+    }
+}
