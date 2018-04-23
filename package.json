@@ -11,7 +11,6 @@
     "dev:less": "lessc -w pre-processadores/less/principal.scss assets/css/style.css",
     "build:stylus": "stylus pre-processadores/stylus/principal.styl -o assets/css/style.css -w -c",
     "dev:stylus": "stylus pre-processadores/stylus/principal.styl -o assets/css/style.css -w"
-    
   },
   "repository": {
     "type": "git",
@@ -22,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/pmagalhaesa/boas-praticas-css/issues"
   },
-  "homepage": "https://github.com/pmagalhaesa/boas-praticas-css#readme"
+  "homepage": "https://github.com/pmagalhaesa/boas-praticas-css#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^4.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-stylus": "^2.7.0"
+  }
 }
