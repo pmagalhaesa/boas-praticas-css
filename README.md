@@ -36,3 +36,9 @@
 - recriar uma pagina indentica, porém com uma barra lateral
 - minificar imagens
 - automatizar a geraçao dos arquivos de produção
+
+# proximos passos
+- criar arquivo css puro usando variaveis que o css tem
+- realizar os testes de desempenho
+- comparar o tamanho de cada arquivo gerado pelos pre processadores
+- comparar as opçoes de minificação que cada um tem

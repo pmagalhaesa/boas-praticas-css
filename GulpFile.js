@@ -25,8 +25,8 @@ gulp.task('sass:watch', function () {
 
 
 
-// include, if you want to work with sourcemaps
-var sourcemaps = require('gulp-sourcemaps');
+// include, if you want to work with 
+//var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('stylus:compress', function () {
     return gulp.src('./pre-processadores/stylus/principal.styl')
