@@ -42,3 +42,4 @@
 - realizar os testes de desempenho
 - comparar o tamanho de cada arquivo gerado pelos pre processadores
 - comparar as opçoes de minificação que cada um tem
+- realizar as alterações necessarias para cumprir cada cenário proposto
