@@ -1,19 +1,16 @@
-.cabecalho{
+.cabecalho
     background: $corEscura;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
     @extend .centralizarColuna;
-    @media (min-width: $responsivoPequeno){
+    @media (min-width: $responsivoPequeno)
         flex-direction: row;
-            justify-content: space-between;
-    }
-    &__logo{
+        justify-content: space-between;
+    
+    &__logo
         width: 100px;
         padding-bottom: 20px;
-        @media (min-width: $responsivoMedio){
+        @media (min-width: $responsivoMedio)
             width: 130px;
             padding-bottom: 0;
-        }
-    }
-}

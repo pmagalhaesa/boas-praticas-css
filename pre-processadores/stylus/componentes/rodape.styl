@@ -1,50 +1,49 @@
-.rodape{
+.rodape
     @extend .centralizar;
     background-color: $corEscura;
     color: $corClara;
     width: 100%;
     box-sizing: border-box;
     @extend .paddingGrande;
-    &__secao{
-        width: gridItem(1);
+    &__secao
+        width gridItem(1);
         box-sizing: border-box;
         padding: $marginPequena;
-        & + &{
+        & + &
             border-top: 1px solid $corClara;
-        }
-        @media (min-width: $responsivoMedio){
-            width: gridItem(3);
-            & + &{
+        
+        @media (min-width: $responsivoMedio)
+            width gridItem(3);
+            & + &
                 border-top: 0;
-            }
-        }
-    }
-    &__paragrafo{
+            
+        
+    
+    &__paragrafo
 
-    }
-    &__lista{
-        &__item{
+    
+    &__lista
+        &__item
             @extend .centralizarColuna;
             padding: $marginPequena;
-            @media (min-width: $responsivoMedio){
+            @media (min-width: $responsivoMedio)
                 flex-direction: row;
                 justify-content: flex-start;
 
-            }
-        }
-    }
-    &__icone{
-    }
-    &__informacao{
+            
+        
+    
+    &__icone
+    
+    &__informacao
         @extend .paddingMinimo;
-    }
+    
 
-    .navegacao{
-        &__lista{
+    .navegacao
+        &__lista
             @extend .centralizarColuna;
-            &__item{
+            &__item
                 @extend .paddingMinimo;
-            }
-        }
-    }
-}
+            
+        
+    

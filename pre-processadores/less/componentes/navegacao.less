@@ -1,15 +1,15 @@
 .navegacao{
     &__link{
-        color: $corClara; 
+        color: @corClara; 
     }
     &__lista{
-        @extend .centralizarColuna;
-        @media (min-width: $responsivoPequeno){
+        &:extend(.centralizarColuna);
+        @media (min-width: @responsivoPequeno){
             flex-direction: row;
         }
         &__item{
             padding-top: 10px;
-            @media (min-width: $responsivoPequeno){
+            @media (min-width: @responsivoPequeno){
                 padding: 0 10px;
              }
         }

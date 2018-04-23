@@ -1,0 +1,27 @@
+.centralizar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.centralizarColuna{
+   &:extend(.centralizar);
+    flex-direction: column;
+}
+
+.paddingMinimo{
+    padding: 5px;
+}
+.paddingPequeno{
+    padding: 10px;
+}
+.paddingMedio{
+    padding: 30px;
+}
+.paddingGrande{
+    padding: 60px;
+}
+.borda{
+    border: 1px solid @corNeutra;
+}

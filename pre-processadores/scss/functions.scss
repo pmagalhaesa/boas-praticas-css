@@ -1,0 +1,3 @@
+@function gridItem($colunas: 3){
+    @return (100% / $colunas) - $marginPadrao;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "boas-praticas-css",
+  "version": "1.0.0",
+  "description": "## boas práticas - resetar css     - https://css-tricks.com/reboot-resets-reasoning/ - Nome de variaveis de forma generica     - corPrincipal e não corAzul - minificar CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scss": "sass --watch pre-processadores/scss/principal.scss:assets/css/style.css --style compressed",
+    "dev:scss": "sass --watch pre-processadores/scss/principal.scss:assets/css/style.css",
+    "build:less": "lessc -x pre-processadores/less/principal.scss assets/css/style.css",
+    "dev:less": "lessc -w pre-processadores/less/principal.scss assets/css/style.css",
+    "build:stylus": "stylus pre-processadores/stylus/principal.styl -o assets/css/style.css -w -c",
+    "dev:stylus": "stylus pre-processadores/stylus/principal.styl -o assets/css/style.css -w"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmagalhaesa/boas-praticas-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmagalhaesa/boas-praticas-css/issues"
+  },
+  "homepage": "https://github.com/pmagalhaesa/boas-praticas-css#readme"
+}

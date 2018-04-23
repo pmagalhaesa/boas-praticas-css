@@ -1,0 +1,7 @@
+.principal{
+    &__titulo{
+        font-size: 3rem;
+        text-align: center;
+        @extend .paddingMedio;
+    }
+}

@@ -1,0 +1,20 @@
+@import 'cores';
+@import 'variaveis';
+@import 'extends';
+@import 'functions';
+@import 'componentes/artigos';
+@import 'componentes/principal';
+@import 'componentes/cabecalho';
+@import 'componentes/navegacao';
+@import 'componentes/rodape';
+
+a{
+    text-decoration: none;
+    &:hover{
+        color: $corPrincipal;
+    }
+}
+
+img{
+    max-width: 100%;
+}
