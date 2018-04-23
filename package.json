@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:scss": "sass --watch pre-processadores/scss/principal.scss:assets/css/style.css --style compressed",
+    "build:scss": "sass pre-processadores/scss/principal.scss:assets/css/style.css --style compressed",
     "dev:scss": "sass --watch pre-processadores/scss/principal.scss:assets/css/style.css",
-    "build:less": "lessc -x pre-processadores/less/principal.scss assets/css/style.css",
-    "dev:less": "lessc -w pre-processadores/less/principal.scss assets/css/style.css",
+    "build:less": "lessc pre-processadores/less/principal.less assets/css/style.css -x ",
+    "dev:less": "lessc pre-processadores/less/principal.less assets/css/style.css",
     "build:stylus": "stylus pre-processadores/stylus/principal.styl -o assets/css/style.css -w -c",
     "dev:stylus": "stylus pre-processadores/stylus/principal.styl -o assets/css/style.css -w"
   },

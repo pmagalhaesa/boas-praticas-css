@@ -34,3 +34,5 @@
 - modificar grid
 - modificar cores
 - recriar uma pagina indentica, porém com uma barra lateral
+- minificar imagens
+- automatizar a geraçao dos arquivos de produção
