@@ -22,7 +22,7 @@
 - gerar arquivos de produção e criar um servidor
 `npm run build:gulp:servidor`
 
-- gerar arquivos automáticamente a cada alteração
+- gerar arquivos automáticamente a cada alteração com servidor carregando automaticamente
 `npm run dev:gulp`
 
 ### SASS
