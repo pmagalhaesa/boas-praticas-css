@@ -6,13 +6,18 @@
 - Nome de variaveis de forma generica
     - corPrincipal e não corAzul
 - minificar CSS
-
+- minificar images
+- minificar html
 
 
 ## extends e mixins
 - Usado para criar css genericos e reaproveita-los
 
 ## Comandos
+
+### GULP
+- gerar arquivos de produção
+`npm run build:gulp`
 
 ### SASS
 - gerar css puro
