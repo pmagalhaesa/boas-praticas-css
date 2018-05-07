@@ -19,6 +19,12 @@
 - gerar arquivos de produção
 `npm run build:gulp`
 
+- gerar arquivos de produção e criar um servidor
+`npm run build:gulp:servidor`
+
+- gerar arquivos automáticamente a cada alteração
+`npm run dev:gulp`
+
 ### SASS
 - gerar css puro
 `sass --watch principal.scss:../../assets/css/style.css --style compressed`
@@ -48,3 +54,4 @@
 - comparar o tamanho de cada arquivo gerado pelos pre processadores
 - comparar as opçoes de minificação que cada um tem
 - realizar as alterações necessarias para cumprir cada cenário proposto
+
