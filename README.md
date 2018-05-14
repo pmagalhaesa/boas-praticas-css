@@ -8,7 +8,12 @@
 - minificar CSS
 - minificar images
 - minificar html
-
+- CSS assincrono
+    - https://www.filamentgroup.com/lab/async-css.html
+- JS Assincrono
+    - https://braziljs.org/blog/diferencas-entre-async-e-defer/
+- Cache do navegador
+    
 
 ## extends e mixins
 - Usado para criar css genericos e reaproveita-los
@@ -46,12 +51,9 @@
 - modificar cores
 - recriar uma pagina indentica, porém com uma barra lateral
 - minificar imagens
-- automatizar a geraçao dos arquivos de produção
+- Remover elementos HTML conseguentemente seus seletores CSS
 
 # proximos passos
 - criar arquivo css puro usando variaveis que o css tem
 - realizar os testes de desempenho
-- comparar o tamanho de cada arquivo gerado pelos pre processadores
-- comparar as opçoes de minificação que cada um tem
-- realizar as alterações necessarias para cumprir cada cenário proposto
 

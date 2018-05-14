@@ -6,6 +6,7 @@ var stylus = require('gulp-stylus');
 var imagemin = require('gulp-imagemin');
 var htmlmin = require('gulp-htmlmin');
 var cssmin = require('gulp-cssmin');
+var jsmin = require('gulp-jsmin');
 var rename = require('gulp-rename');
 var rimraf = require('rimraf');
 var gulpSequence = require('gulp-sequence');
@@ -43,11 +44,18 @@ gulp.task('minify:htmlstylus', function () {
 });
 
 gulp.task('minify:css', function () {
-    gulp.src('assets/css/*.css')
+    gulp.src('assets/css/resetar.css')
         .pipe(cssmin())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('dist/assets/css/'))
         .pipe(connect.reload())
+});
+
+gulp.task('minify:js', function () {
+    gulp.src('assets/js/**/*.js')
+        .pipe(jsmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('dist/assets/js/'));
 });
 
 gulp.task('minify:less', function () {
@@ -108,7 +116,7 @@ gulp.task('connect', function () {
     });
 });
 gulp.task('geral', function(cb){
-    gulpSequence('limpar', ['minify:htmlsass', 'minify:htmlless', 'minify:htmlstylus', 'minify:images', 'minify:css'], ['sass', 'less', 'stylus:compress'], ['minify:less', 'minify:sass'])(cb)
+    gulpSequence('limpar', ['minify:htmlsass', 'minify:htmlless', 'minify:htmlstylus', 'minify:images', 'minify:css', 'minify:js'], ['sass', 'less', 'stylus:compress'], ['minify:less', 'minify:sass'])(cb)
 });
 gulp.task('build', ['geral']);
 gulp.task('build:servidor', gulpSequence('geral', 'connect'));

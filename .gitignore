@@ -3,4 +3,4 @@
 *.css
 node_modules
 build/
-dist/
+/dist
